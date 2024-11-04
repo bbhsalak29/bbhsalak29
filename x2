@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Card>
+  <application aid="A0000000291010">
+    <fileControlInformation>
+      <tlv tag="6F" length="0" value="" description="FCI Template">
+        <tlv tag="84" length="7" value="A0000000291010" description="Dedicated File (DF) Name" />
+        <tlv tag="A5" length="0" value="" description="FCI Proprietary Template">
+          <tlv tag="50" length="16" value="414D45524943414E2045585052455353" description="Application Label" />
+          <tlv tag="87" length="1" value="02" description="Application Priority Indicator" />
+          <tlv tag="5F2D" length="2" value="656E" description="Language Preference" />
+        </tlv>
+      </tlv>
+    </fileControlInformation>
+    <applicationInterchangeProfile>
+      <tlv tag="77" length="0" value="" description="Response Message Template Format 2">
+        <tlv tag="82" length="2" value="3C00" description="Application Interchange Profile" />
+        <tlv tag="94" length="20" value="0801010008020201080405001002020018030300" description="Application File Locator (AFL)" />
+      </tlv>
+    </applicationInterchangeProfile>
+    <elementaryFile sfi="1">
+      <record number="1">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="57" length="19" value="372343810293005D210920116093576600000F" description="Track 2 Equivalent Data" />
+          <tlv tag="5F20" length="26" value="4455434B4554542F524F53454D41525920202020202020202020" description="Cardholder Name" />
+        </tlv>
+      </record>
+      <record number="2">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="5F24" length="3" value="210930" description="Application Expiration Date" />
+          <tlv tag="5F25" length="3" value="160901" description="Application Effective Date" />
+          <tlv tag="5A" length="8" value="372343810293005F" description="Primary Account Number (PAN)" />
+          <tlv tag="5F34" length="1" value="00" description="Application PAN Sequence Number" />
+          <tlv tag="9F07" length="2" value="FF00" description="Application Usage Control" />
+          <tlv tag="8C" length="21" value="9F02069F03069F1A0295055F2A029A039C019F3704" description="Card Risk Management Data 1 (CDOL1)" />
+          <tlv tag="8D" length="23" value="8A029F02069F03069F1A0295055F2A029A039C019F3704" description="Card Risk Management Data 2 (CDOL2)" />
+          <tlv tag="9F0D" length="5" value="F850ECA800" description="Issuer Action Code - Default" />
+          <tlv tag="9F0E" length="5" value="0000000000" description="Issuer Action Code - Denial" />
+          <tlv tag="9F0F" length="5" value="F878FCF800" description="Issuer Action Code - Online" />
+          <tlv tag="5F28" length="2" value="0840" description="Issuer Country Code" />
+          <tlv tag="5F30" length="2" value="0201" description="Service Code" />
+          <tlv tag="9F42" length="2" value="0840" description="Application Currency Code" />
+          <tlv tag="9F08" length="2" value="0001" description="Application Version Number" />
+          <tlv tag="9F4A" length="1" value="82" description="Static Data Authentication Tag List" />
+        </tlv>
+      </record>
+      <record number="4">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="9F46" length="144" value="C7B5FF8B8E95926BEC0E5FE2F92A232295D3835232C4B5ED3B5A97C909C81E91A3FB7E67E96C61BA57389FB849F2FF5CEEED495892C8D6C332C224E6A99E04836A5297144BAF50B9A8379677A86CF107F9BE5B7B533A67390EFFF53B3E58292D707DB9E032C8A289612975ED22F313501BA0301A5A8D5D4F9966FE53A6B2D8718F812CE68F8F8822A1A5477FC4A44132" description="ICC Public Key Certificate" />
+          <tlv tag="9F47" length="1" value="03" description="ICC Public Key Exponent" />
+          <tlv tag="9F48" length="10" value="14A0069C128AA68C65E7" description="ICC Public Key Remainder" />
+          <tlv tag="9F49" length="3" value="9F3704" description="Dynamic Data Authentication Data (DDOL)" />
+        </tlv>
+      </record>
+      <record number="5">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="90" length="176" value="2ED7009FF2FF0533903B2A2F9CC19DC198BA11E35FF3A6B31B8EF468FAEDD5D888A23621A46EA2797BFE39032212FBA33EB1661D6A0F9605EDF1E9608E28F7FDD367C475CB84D667C9717609A84BA485C2B0530153C3F20A4D2D885600D1B2A867EFBC5D2D7C61A9B2C2A11510CBD81F7CE7C578BB83DA9EF318FFD534B1DBB106B6ABAF500CF03E15B40E78BA7EDE5A2EE2A528F41A2B330A76D758EB8E91B18C5ADBDC5FC5988C4A65046347A79183" description="Issuer Public Key Certificate" />
+        </tlv>
+      </record>
+    </elementaryFile>
+    <elementaryFile sfi="2">
+      <record number="2">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="9F32" length="1" value="03" description="Issuer Public Key Exponent" />
+          <tlv tag="8F" length="1" value="0F" description="Certification Authority Public Key Index" />
+          <tlv tag="92" length="4" value="07A991E9" description="Issuer Public Key Remainder" />
+        </tlv>
+      </record>
+    </elementaryFile>
+    <elementaryFile sfi="3">
+      <record number="3">
+        <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+          <tlv tag="8E" length="24" value="000000000000000042015E031F0200000000000000000000" description="Cardholder Verification Method (CVM) List" />
+        </tlv>
+      </record>
+    </elementaryFile>
+    <getinternaldata>
+      <tlv tag="70" length="0" value="" description="Application Elementary File (AEF) Data Template">
+        <tlv tag="9F13" length="2" value="0003" description="Last Online ATC Register" />
+        <tlv tag="9F17" length="1" value="03" description="PIN Try Counter" />
+        <tlv tag="9F36" length="2" value="000F" description="Application Transaction Counter (ATC)" />
+      </tlv>
+    </getinternaldata>
+    <genrationappcrypto>
+      <tlv tag="77" length="0" value="" description="Response Message Template Format 2">
+        <tlv tag="9F27" length="1" value="80" description="Cryptogram Information Data (CID)" />
+        <tlv tag="9F36" length="2" value="0049" description="Application Transaction Counter (ATC)" />
+        <tlv tag="9F26" length="8" value="8A3470B2406A1148" description="Application Cryptogram (AC)" />
+        <tlv tag="9F10" length="18" value="0114A500030200003B0F00000000000000FF" description="Issuer Application Data" />
+      </tlv>
+    </genrationappcrypto>
+  </application>
+</Card>
